@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Ricardo Calderón</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #e2e8f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Contenedor Principal (Flexbox 2 Columnas) */
+        .cv-card {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            max-width: 900px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        /* Lateral Izquierdo */
+        .sidebar {
+            width: 320px;
+            background-color: #1e293b;
+            color: #ffffff;
+            padding: 35px 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .profile-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 4px solid #38bdf8;
+            object-fit: cover;
+        }
+
+        .sidebar-section {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .sidebar-title {
+            color: #38bdf8;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 6px;
+        }
+
+        .contact-item {
+            font-size: 13px;
+            line-height: 1.4;
+        }
+
+        .contact-item strong {
+            display: block;
+            color: #ffffff;
+            font-size: 13px;
+            margin-bottom: 2px;
+        }
+
+        .contact-item span {
+            color: #94a3b8;
+            word-break: break-all;
+        }
+
+        /* Habilidades como botones */
+        .skills-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .skill-tag {
+            background-color: #334155;
+            color: #e2e8f0;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+        }
+
+        .language-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-size: 13px;
+            color: #cbd5e1;
+        }
+
+        .language-list li::before {
+            content: "• ";
+            color: #38bdf8;
+        }
+
+        /* Contenido Principal (Derecha) */
+        .main-content {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            background-color: #ffffff;
+        }
+
+        .header-info h1 {
+            color: #0f172a;
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .header-info .subtitle {
+            color: #0284c7;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .content-section {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .section-title {
+            color: #0f172a;
+            font-size: 15px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 2px solid #0284c7;
+            padding-bottom: 4px;
+        }
+
+        .profile-text {
+            color: #475569;
+            font-size: 13.5px;
+            line-height: 1.6;
+        }
+
+        .timeline-item {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            margin-bottom: 10px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .item-title {
+            font-size: 14.5px;
+            font-weight: 700;
+            color: #0f172a;
+        }
+
+        .item-institution {
+            font-size: 13px;
+            color: #0284c7;
+            font-weight: 500;
+        }
+
+        .item-description {
+            font-size: 13px;
+            color: #64748b;
+            line-height: 1.5;
+            margin-top: 4px;
+        }
+
+        @media (max-width: 768px) {
+            .cv-card {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cv-card">
+        <!-- Sidebar Izquierda -->
+        <aside class="sidebar">
+            <div class="profile-container">
+                <img src="images\WhatsApp Image 2026-11-01 at 12.31.22 PM.jpeg" alt="Ricardo Calderón" class="profile-img">
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-title">Contacto</div>
+                <div class="contact-item">
+                    <strong>Cédula:</strong>
+                    <span>0107618662</span>
+                </div>
+                <div class="contact-item">
+                    <strong>Correo:</strong>
+                    <span>richardkagenou@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <strong>Teléfono:</strong>
+                    <span>0968671080</span>
+                </div>
+                <div class="contact-item">
+                    <strong>Ubicación:</strong>
+                    <span>Cuenca, Ecuador</span>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-title">Habilidades</div>
+                <div class="skills-list">
+                    <div class="skill-tag">HTML5 & CSS3 Básicos</div>
+                    <div class="skill-tag">Uso de Flexbox</div>
+                    <div class="skill-tag">Lógica de Programación</div>
+                    <div class="skill-tag">Fundamentos de C++ / Python</div>
+                    <div class="skill-tag">Git y GitHub Básicos</div>
+                    <div class="skill-tag">Trabajo en Equipo</div>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-title">Idiomas</div>
+                <ul class="language-list">
+                    <li>Español (Nativo)</li>
+                    <li>Inglés (Básico - En proceso)</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Contenido Principal Derecho -->
+        <main class="main-content">
+            <div class="header-info">
+                <h1>Ricardo Sebastián Calderón Quito</h1>
+                <div class="subtitle">Estudiante de Ingeniería en Sistemas / Software</div>
+            </div>
+
+            <section class="content-section">
+                <div class="section-title">Perfil Profesional</div>
+                <p class="profile-text">
+                    Estudiante de primer año de la carrera de Sistemas / Software con gusto por el diseño web y el desarrollo tecnológico. Actualmente enfocado en aprender los fundamentos de la programación, estructuras de datos y maquetación web con HTML y CSS. Me considero una persona creativa, responsable y con muchas ganas de aprender.
+                </p>
+            </section>
+
+            <section class="content-section">
+                <div class="section-title">Formación Académica</div>
+                
+                <div class="timeline-item">
+                    <div class="item-header">
+                        <div class="item-title">Ingeniería en Sistemas / Software</div>
+                    </div>
+                    <div class="item-institution">Universidad (Cuenca, Ecuador)</div>
+                    <p class="item-description">Cursando actualmente el 1er semestre. Aprendiendo lógica de programación, matemáticas discretas y maquetación web básica.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="item-header">
+                        <div class="item-title">Bachillerato General Unificado</div>
+                    </div>
+                    <div class="item-institution">Unidad Educativa (Cuenca, Ecuador)</div>
+                    <p class="item-description">Graduado con buenas calificaciones y participación en proyectos informáticos estudiantiles.</p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <div class="section-title">Proyectos y Experiencia</div>
+                
+                <div class="timeline-item">
+                    <div class="item-header">
+                        <div class="item-title">Proyecto Web Académico (CV con Flexbox)</div>
+                    </div>
+                    <div class="item-institution">Proyecto de Aula</div>
+                    <p class="item-description">Diseño y creación de una página web personal responsive aplicando HTML estructurado y estilos CSS modernos con Flexbox (`display: flex`, `flex-direction`, `justify-content`).</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="item-header">
+                        <div class="item-title">Ejercicios de Lógica en C++ / Python</div>
+                    </div>
+                    <div class="item-institution">Prácticas Básicas</div>
+                    <p class="item-description">Desarrollo de pequeños programas de consola utilizando condicionales, bucles y funciones básicas para resolver problemas matemáticos.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
